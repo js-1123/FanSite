@@ -1,0 +1,138 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+.inner {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+
+.log {
+	/*border: 1px solid red;*/
+	position: relative;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 20%;
+}
+
+.log h1 {
+	font-size: 50px;
+	border-bottom: 1px solid #000;
+}
+
+
+.top {
+	
+	/*border: 1px solid blue;*/
+	height: 150px;
+	position: absolute;
+	width: 100%;
+	background: url(../image/ba006.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.log_input {
+	position: absolute;
+	/*border: 3px solid pink;*/
+	top: 37%;
+	width: 650px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	
+	
+}
+
+
+
+
+.log_input div {
+	height: 500px;
+	/*border: 1px solid blue;*/
+	/*display: block;*/
+	width: 100%;
+	text-align: center;
+
+
+}
+
+.log_input input {
+	
+	margin: 30px;
+	width: 75%;
+	height: 40px;
+	border-radius: 10px;
+/*	display: block;*/
+
+
+}
+
+.bu1 {
+	width: 200px;
+	height: 50px;
+	background-color: #FFC9C9;
+	display: block;
+	margin: auto;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	/*border: 5px solid blue;*/
+}
+
+.bu2 {
+	margin-top: 25px;
+}
+
+
+
+.menu {
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 300px;
+	line-height: 20px;
+  border-radius: 5px;
+  text-align: center;
+ /* line-height: 50px;*/
+
+
+}
+
+.submenu a {
+  color: #fff;
+/*  position: absolute;*/
+  display: inline-block;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+  font-family: 'Raleway';
+  transition: 0.4s;
+	
+}
+
+.submenu a:hover {
+	color: crimson;
+}

@@ -1,0 +1,89 @@
+.top-pic {
+	height: 200px;
+
+	text-align: center;
+	position: relative;
+	background: url(../image/ba008.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.top-pic span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 50px;
+	color: #fff;
+}
+
+table {
+	margin-top: 50px;
+}
+
+.ga {
+	
+	
+	text-align: center;
+	margin-top: 50px;
+	
+}
+
+.ga > a {
+	margin-left: 10px;
+	width: 150px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #FFB9B9;
+	
+	cursor: pointer;
+	color: #000;
+	font-weight: bold;
+	padding: 10px;
+
+}
+
+.c1 {
+	/*border: 1px solid pink;*/
+	margin: auto;
+	width: 100%;
+	
+}
+
+.i {
+	margin-left: 470px;
+	text-align: center;
+	/*border: 1px solid blue;*/
+
+}
+
+.menu {
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  width: 300px;
+
+  border-radius: 5px;
+  text-align: center;
+ /* line-height: 50px;*/
+ text-decoration: none;
+
+}
+
+.submenu a {
+  color: #fff;
+/*  position: absolute;*/
+  display: inline-block;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+  font-family: 'Raleway';
+  transition: 0.4s;
+  text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.submenu a:hover {
+	color: crimson;
+	 text-decoration: none;
+}

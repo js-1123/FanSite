@@ -1,0 +1,133 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+.inner1 {
+	background-color: gold;
+	height: 200px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../image/ba002.jpg) no-repeat center center;
+}
+
+.inner1 h1 {
+	color: #fff;
+	font-size: 80px;
+	text-shadow: 0 0 10px #F8FFBE;
+}
+
+.inner2 {
+	border: 1px solid #eee;
+	width: 700px;
+	height: 600px;
+	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin-top: 50px;
+
+
+}
+
+/*.in1 {
+	height: 400px;
+	background-color: gold;
+}*/
+
+.form {
+	margin: 40px;
+
+
+}
+
+.form label {
+	display: block;
+}
+
+input {
+	display: inline-block;
+	height: 25px;
+	width: 80%;
+	margin-top: 25px;
+	
+	border-radius: 5px;
+}
+
+.form input{
+	
+	transform: translateX(12%);
+
+
+}
+
+.inner2 button {
+	
+	position: absolute;
+	right: 50px;
+	bottom: 40px;
+	padding: 15px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: #FFB2B2;
+
+}
+
+.menu {
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 300px;
+	line-height: 20px;
+  border-radius: 5px;
+  text-align: center;
+ /* line-height: 50px;*/
+
+
+}
+
+.submenu a {
+  color: #fff;
+/*  position: absolute;*/
+  display: inline-block;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+  font-family: 'Raleway';
+  transition: 0.4s;
+	
+}
+
+.submenu a:hover {
+	color: crimson;
+}
+
+.re1,.re2
+ {
+	background-color: #eee;
+}
+
+.e1,.e2 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+

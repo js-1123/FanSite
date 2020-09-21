@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+	margin: 0;
+	 font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+input[name=tabmenu] {
+  display: none;
+}
+
+.slide {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.items {
+  height: 100vh;
+  width: 300%;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.items div {
+  height: 100vh;
+  float: left;
+  width: 33.33333%;
+ /* box-sizing: border-box;*/
+  position: relative;
+
+ 
+}
+
+.items div:nth-child(1):before,
+.items div:nth-child(2):before,
+.items div:nth-child(3):before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.items div:nth-child(1) {
+  background: url(../image/ba04.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.items div:nth-child(2) {
+  background: url(../image/ba006.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.items div:nth-child(3) {
+  background: url(../image/ba001.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.items div:nth-child(1):before {
+  background: linear-gradient(135deg, pink, transparent);
+}
+
+.items div:nth-child(2):before {
+  background: linear-gradient(135deg, #C5D4FF, transparent);
+}
+
+.items div:nth-child(3):before {
+  background: linear-gradient(135deg, #FFFEDB, transparent);
+}
+
+
+.items div h1 {
+  font-size: 150px;
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 180px;
+  left: 150px;
+
+
+  /*transform: translateX(-300px);*/
+  /*opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;*/
+  
+
+  
+
+}
+
+/*input[id=tab1]:checked ~ .slide .items div:nth-child(1) h1,
+input[id=tab2]:checked ~ .slide .items div:nth-child(2) h1,
+input[id=tab3]:checked ~ .slide .items div:nth-child(3) h1 {
+  transform: translateX(80px);
+  opacity: 1;
+}*/
+
+input[id=tab1]:checked ~ .slide .items {
+  left: 0;
+}
+input[id=tab2]:checked ~ .slide .items {
+  left: -100%;
+}
+input[id=tab3]:checked ~ .slide .items {
+  left: -200%;
+}
+
+.btn {
+  height: 30px;
+  /*background-color: rgba(0,0,0,0.5);*/
+  position: absolute;
+  top: 90%;
+  
+  width: 100%;
+  text-align: center;
+
+}
+
+.btn label {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.75);
+  margin: 5px;
+  text-align: center;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+ background: crimson;
+
+}
+
+.menu {
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  width: 300px;
+
+  border-radius: 5px;
+  text-align: center;
+ /* line-height: 50px;*/
+
+
+}
+
+.submenu > a {
+  color: #fff;
+/*  position: absolute;*/
+  display: inline-block;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+  font-family: 'Raleway';
+  transition: 0.4s;
+	
+}
+
+.submenu > a:hover {
+	color: crimson;
+}
+
+input[id=trigger] {
+	display: none;
+}
+
+label[for=trigger] {
+	display: block;
+	/*border: 1px solid red;*/
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.4s;
+
+}
+
+label[for=trigger] span {
+	position: absolute;
+	height: 2px;
+	background-color: #000;
+	width: 100%;
+	left: 0;
+	transition: 0.3s;
+
+
+}
+
+label[for=trigger] span:nth-child(1) {
+	top: 0;
+}
+
+label[for=trigger] span:nth-child(2) {
+	top: 50%;
+}
+
+label[for=trigger] span:nth-child(3) {
+	top: 100%;
+}
+
+input[id=trigger]:checked ~ label[for=trigger] span:nth-child(1) {
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+input[id=trigger]:checked ~ label[for=trigger] span:nth-child(2) {
+	opacity: 0;
+}
+
+input[id=trigger]:checked ~ label[for=trigger] span:nth-child(3) {
+	top: 50%;
+	transform: rotate(-45deg);
+}
+
+input[id=trigger]:checked ~ .slide > .sidebar {
+	right: 0;
+}
+
+.slide > .sidebar {
+	background-color: rgba(0,0,0,0.7);
+	width: 300px;
+	height: 100vh;
+	position: absolute;
+	right: -300px;
+	transition: 0.4s;
+	top: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.sidemenu a {
+	display: block;
+	color: #fff;
+	margin: 25px;
+	font-size: 35px;
+	cursor: pointer;
+	transition: 0.4s;
+
+}
+
+.sidemenu a:hover{
+	color: crimson;
+}
+
+input[id=trigger]:checked ~ label[for=trigger] {
+	right: 310px;
+}
